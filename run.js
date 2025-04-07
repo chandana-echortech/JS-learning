@@ -3,9 +3,10 @@ let n = 5;
 for (let i = n; i >= 1; i--) {
   let row = '';
   for (let j = 1; j <= i; j++) {
-     row += '*'; 
-     if (j !== i) {row += ' ';}
- 
+    if (j === 1) {  row += '*';    
+      } else {
+        row += ' *';
+         }
 }
   console.log(row);
 }
